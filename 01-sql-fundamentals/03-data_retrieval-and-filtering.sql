@@ -40,3 +40,7 @@ age>21 or year=4;
 select * from hostel.students
 where
 course IN ('BTech IT','BTech CSE','BTech ECE');
+-- Find all students not enrolled in BTech IT
+select * from hostel.students
+where
+course NOT IN ('BTech IT');
