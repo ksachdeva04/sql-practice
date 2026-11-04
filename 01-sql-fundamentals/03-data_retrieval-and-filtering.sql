@@ -44,3 +44,19 @@ course IN ('BTech IT','BTech CSE','BTech ECE');
 select * from hostel.students
 where
 course NOT IN ('BTech IT');
+-- Find all students whose ages are between 19 and 20
+select * from hostel.students 
+where 
+age between 19 and 20;
+-- Find students whose admission dates fall between 1 August 2026 and 2 August 2026
+select * from hostel.students
+where
+admission_date between '2026-08-01' and '2026-08-02';
+-- Find all students whose names start with the letter 'R'.
+select * from hostel.students
+where
+student_name LIKE 'R%';
+-- Find all students whose names do not start with the letter 'A'.
+select * from hostel.students
+where 
+student_name NOT LIKE 'A%'
